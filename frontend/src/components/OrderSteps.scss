@@ -1,0 +1,15 @@
+.order-steps {
+  display: flex;
+  text-align: center;
+
+  & > div {
+    border-bottom: 0.4em solid rgb(189, 189, 189);
+    color: rgb(189, 189, 189);
+    padding-bottom: 1em;
+
+    &.active {
+      border-bottom: 0.4em solid #5bc0de;
+      color: #5bc0de;
+    }
+  }
+}

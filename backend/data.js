@@ -1,0 +1,93 @@
+import bcrypt from "bcryptjs";
+
+const data = {
+  users: [
+    {
+      name: "Martin",
+      email: "martinjuros8@gmail.com",
+      password: bcrypt.hashSync("123456"),
+      isAdmin: true,
+    },
+    {
+      name: "David",
+      email: "david@seznam.cz",
+      password: bcrypt.hashSync("123456"),
+      isAdmin: false,
+    },
+  ],
+  products: [
+    {
+      name: "Hoodie from Nike",
+      slug: "hoodie-from-nike",
+      image: "/images/product-1.webp",
+      price: 49,
+      type: "hoodie",
+      brand: "Nike",
+      countInStock: 10,
+    },
+    {
+      name: "Jeans from Jack and Jones",
+      slug: "jeans-from-jack-and-jones",
+      image: "/images/product-2.webp",
+      price: 39,
+      type: "jeans",
+      brand: "Jack and Jones",
+      countInStock: 0,
+    },
+    {
+      name: "T-shirt from Tommy Hilfiger",
+      slug: "T-shirt-from-Tommy-Hilfiger",
+      image: "/images/product-3.webp",
+      price: 33,
+      type: "T-shirt",
+      brand: "Tommy Hilfiger",
+      countInStock: 22,
+    },
+    {
+      name: "T-shirt from Gap",
+      slug: "T-shirt-from-Gap",
+      image: "/images/product-4.webp",
+      price: 20,
+      type: "T-shirt",
+      brand: "Gap",
+      countInStock: 14,
+    },
+    {
+      name: "Jeans from Levis",
+      slug: "Jeans-from-Levis",
+      image: "/images/product-5.webp",
+      price: 36,
+      type: "jeans",
+      brand: "Levis",
+      countInStock: 1,
+    },
+    {
+      name: "Hoodie from Gant",
+      slug: "hoodie-from-gant",
+      image: "/images/product-6.webp",
+      price: 45,
+      type: "hoodie",
+      brand: "Gant",
+      countInStock: 4,
+    },
+    {
+      name: "Shorts from Jack and Jones",
+      slug: "Shorts-from-Jack-and-Jones",
+      image: "/images/product-7.webp",
+      price: 19,
+      type: "shorts",
+      brand: "Nike",
+      countInStock: 15,
+    },
+    {
+      name: "Polo shirt from Lacoste",
+      slug: "Polo-shirt-from-Lacoste",
+      image: "/images/product-8.webp",
+      price: 52,
+      type: "polo shirt",
+      brand: "Lacoste",
+      countInStock: 4,
+    },
+  ],
+};
+export default data;

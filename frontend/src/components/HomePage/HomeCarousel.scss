@@ -1,0 +1,25 @@
+@import "../../styles/mixins.scss";
+
+.carousel-content-wraper {
+  min-height: calc(100vh - 180px);
+
+  // & > img {
+  //   min-height: calc(100vh - 180px);
+  //   background-position: center center;
+  // }
+}
+
+.background-image-1 {
+  background-image: url("../../assets/HomeCarousel/img-1.jpg");
+  @include slider;
+}
+
+.background-image-2 {
+  background-image: url("../../assets/HomeCarousel/img-3.jpg");
+  @include slider;
+}
+
+.background-image-3 {
+  background-image: url("../../assets/HomeCarousel/img-2.jpg");
+  @include slider;
+}

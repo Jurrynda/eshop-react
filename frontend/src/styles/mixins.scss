@@ -1,0 +1,20 @@
+@mixin image-wrapper($height: 10em) {
+  height: $height;
+  position: relative;
+  background-color: rgb(244, 244, 245);
+
+  & > img {
+    object-position: center center;
+    object-fit: contain;
+    margin: auto;
+    inset: 0.5%;
+    max-height: 90%;
+    max-width: 90%;
+    position: absolute;
+  }
+}
+
+@mixin slider {
+  height: calc(100vh - 154px);
+  background-position: top center;
+}

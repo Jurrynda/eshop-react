@@ -1,0 +1,10 @@
+@import "../styles/mixins.scss";
+.product-img-wrap {
+  @include image-wrapper(25em);
+}
+
+.product-wrap {
+  flex: 0 1 25em;
+  margin: 1em;
+  margin-bottom: 2em;
+}
